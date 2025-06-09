@@ -132,13 +132,14 @@ export class AuthenticationTester {
     
     try {
       // Simulate form-based login
-      const loginData = new FormData();
+      // Use URLSearchParams so the Content-Type header matches the body
+      const loginData = new URLSearchParams();
       loginData.append('username', credentials.username);
       loginData.append('password', credentials.password);
 
       const response = await fetch(`${url}/login`, {
         method: 'POST',
-        body: loginData,
+        body: loginData.toString(),
         credentials: 'include',
         headers: {
           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
