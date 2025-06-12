@@ -64,7 +64,7 @@
 ### ⚙️ Installation
 
 ```bash
-git clone https://github.com/yourusername/webperf-pro.git
+git clone https://github.com/gaurang-workshore/WebPerf-Pro.git
 cd webperf-pro
 npm install
 # or
