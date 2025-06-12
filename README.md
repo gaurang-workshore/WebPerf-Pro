@@ -1,323 +1,264 @@
-# WebPerf Pro
+# 🌐 WebPerf Pro
 
 > A comprehensive web performance analyzer for authenticated applications with advanced security auditing and real-time testing capabilities.
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-[![React](https://img.shields.io/badge/React-18.3.1-blue.svg)](https://reactjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.6.3-blue.svg)](https://www.typescriptlang.org/)
-[![Vite](https://img.shields.io/badge/Vite-5.4.8-646CFF.svg)](https://vitejs.dev/)
+![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
+![React](https://img.shields.io/badge/React-18.3.1-blue.svg)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.6.3-blue.svg)
+![Vite](https://img.shields.io/badge/Vite-5.4.8-646CFF.svg)
 
-![WebPerf Pro - Authenticated Application Performance Analyzer · 10 46am · 06-12](https://github.com/user-attachments/assets/b98b0d07-da92-467e-bce0-c760f7b03299)
+![WebPerf Pro Screenshot](https://github.com/user-attachments/assets/b98b0d07-da92-467e-bce0-c760f7b03299)
 
+---
 
-## 🌟 Features
+## ✨ Features
 
-### Performance Analysis
-- **Core Web Vitals monitoring** (LCP, FID, CLS)
-- **Request waterfall visualization** with detailed timing
-- **Asset breakdown analysis** (CSS, JS, images, fonts)
-- **Load time optimization insights**
-- **Performance metrics dashboard**
+### 🔍 Performance Analysis
 
-### Security Auditing
-- **Comprehensive security scoring** (0-100 scale)
-- **HTTP security headers analysis**
-- **SSL/TLS encryption validation**
-- **Authentication flow testing**
-- **Vulnerability detection and recommendations**
+- ✅ Core Web Vitals monitoring (LCP, FID, CLS)
+- ✅ Request waterfall visualization with detailed timing
+- ✅ Asset breakdown analysis (CSS, JS, images, fonts)
+- ✅ Load time optimization insights
+- ✅ Performance metrics dashboard
 
-### Authentication Support
-- **Multiple auth methods**: Token-based, form login, custom headers, cookies
-- **Session management testing**
-- **Protected endpoint validation**
-- **Memberstack integration**
-- **Interactive authentication flows**
+### 🛡️ Security Auditing
 
-### Advanced Testing
-- **Authentication test suite** with automated validation
-- **CSRF protection testing**
-- **Session timeout verification**
-- **Logout functionality testing**
-- **API endpoint security assessment**
+- 🔐 Comprehensive security scoring (0–100 scale)
+- 🔐 HTTP security headers analysis
+- 🔐 SSL/TLS encryption validation
+- 🔐 Authentication flow testing
+- 🔐 Vulnerability detection and recommendations
 
-### Reporting & Export
-- **PDF report generation** with detailed metrics
-- **JSON data export** for integration
-- **Share functionality** with native browser API
-- **Visual charts and graphs** using Recharts
+### 🔐 Authentication Support
 
+- 🔑 Multiple auth methods: Token, form login, headers, cookies
+- 🔑 Session management testing
+- 🔑 Protected endpoint validation
+- 🔑 Memberstack integration
+- 🔑 Interactive authentication flows
+
+### 🧪 Advanced Testing
+
+- 🧠 Automated auth test suite
+- 🧠 CSRF protection testing
+- 🧠 Session timeout validation
+- 🧠 Logout functionality testing
+- 🧠 API endpoint security assessment
+
+### 📊 Reporting & Export
+
+- 📝 PDF report generation
+- 📝 JSON data export
+- 📝 Native browser sharing
+- 📝 Visualizations with Recharts
+
+---
 
 ## 🚀 Quick Start
 
-### Prerequisites
-- Node.js 18+ 
+### 📦 Prerequisites
+
+- Node.js 18+
 - npm 8+ or yarn
 
-### Installation
+### ⚙️ Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/webperf-pro.git
-   cd webperf-pro
-   ```
+```bash
+git clone https://github.com/yourusername/webperf-pro.git
+cd webperf-pro
+npm install
+# or
+yarn install
+```
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
+### ▶️ Development Server
 
-3. **Start development server**
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-4. **Open your browser**
-   Navigate to `http://localhost:5173`
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-### Production Build
+### 🏗️ Production Build
 
 ```bash
 npm run build
 npm run preview
 ```
 
+---
 
-## 🛠️ Technology Stack
+## 🛠️ Tech Stack
 
-### Core
-- **React 18.3.1** - UI framework
-- **TypeScript 5.6.3** - Type safety
-- **Vite 5.4.8** - Build tool and dev server
+- **React 18.3.1** — UI Framework
+- **TypeScript 5.6.3** — Static Typing
+- **Vite 5.4.8** — Build Tool
 
-### UI & Styling
-- **Tailwind CSS 3.4.13** - Utility-first CSS
-- **Lucide React** - Icon library
-- **Recharts 2.15.3** - Chart visualization
+#### 🎨 UI
 
-### Analysis & Reporting
-- **jsPDF 2.5.2** - PDF generation
-- **Performance API** - Web performance metrics
-- **Fetch API** - Network request handling
+- Tailwind CSS
+- Lucide React Icons
+- Recharts (Charts)
 
-### Development Tools
-- **ESLint 9.12.0** - Code linting
-- **TypeScript ESLint** - TypeScript-specific linting
-- **PostCSS** - CSS processing
-- **Autoprefixer** - CSS vendor prefixes
+#### 📊 Analysis
 
+- jsPDF (PDF)
+- Performance API
+- Fetch API
 
-## 📖 Usage
+#### 🧰 Dev Tools
 
-### Basic Analysis
+- ESLint & TypeScript ESLint
+- PostCSS + Autoprefixer
 
-1. **Enter target URL** in the analysis form
-2. **Select authentication method**:
-   - **Public**: No authentication required
-   - **Token**: API keys or Bearer tokens
-   - **Login**: Username/password authentication
-   - **Interactive**: Manual browser authentication
+---
 
-3. **Configure authentication** (if required):
-   - Add credentials, headers, or cookies
-   - Use JSON format for complex configurations
+## 📝 Usage Guide
 
-4. **Start analysis** and monitor progress
-5. **Review results** across multiple tabs:
-   - Overview with key metrics
-   - Detailed performance analysis
-   - Security audit findings
-   - Request waterfall view
-   - Authentication test results
+### 🧪 Run Analysis
 
-### Authentication Examples
+1. Enter target URL
+2. Choose auth method:
+    - Public / Token / Login / Interactive
+3. Configure headers/cookies (if needed)
+4. Start analysis
+5. Explore results in:
+    - Overview
+    - Performance
+    - Security
+    - Waterfall
+    - Auth Tests
 
-#### Token-based Authentication
+### 🔐 Auth Examples
+
+**Token-based**
 ```json
 {
   "headers": {
-    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+    "Authorization": "Bearer YOUR_TOKEN",
     "X-API-Key": "your-api-key"
   }
 }
 ```
 
-#### Cookie-based Authentication
+**Cookie-based**
 ```json
 {
   "cookies": {
-    "sessionId": "abc123def456",
-    "authToken": "xyz789",
-    "remember": "true"
+    "sessionId": "abc123",
+    "authToken": "xyz789"
   }
 }
 ```
 
-### Advanced Features
+### 🔁 Memberstack Support
 
-#### Memberstack Integration
-WebPerf Pro automatically detects and integrates with Memberstack authentication when available in the browser environment.
+Auto-detection and integration in browser environment.
 
-#### Security Testing
-The built-in security audit checks for:
-- Missing security headers (CSP, HSTS, X-Frame-Options)
-- SSL/TLS configuration
-- Authentication vulnerabilities
-- Session management issues
+### 🔎 Security Checks
 
-#### Test Suite Execution
-Run comprehensive authentication tests:
-- Valid/invalid credential testing
-- Session management validation
-- Protected endpoint access verification
-- Error handling assessment
+- CSP / HSTS / X-Frame headers
+- TLS/SSL validation
+- Auth/session issues
 
+### 📋 Test Suite
 
-## 🔧 Configuration
+- Valid/invalid login flows
+- Session expiration
+- Protected resource access
 
-### Environment Variables
-Create a `.env` file in the root directory:
+---
 
+## ⚙️ Configuration
+
+### 🔧 Environment
+
+Create `.env`:
 ```env
-# Optional: Analytics tracking
 VITE_ANALYTICS_ID=your-analytics-id
-
-# Optional: API endpoints
 VITE_API_BASE_URL=https://api.example.com
 ```
 
-### Custom Authentication Providers
-Extend authentication support by modifying `src/services/authTester.ts`:
+### 🔌 Custom Auth
 
-```typescript
-// Add custom authentication method
+Extend in `src/services/authTester.ts`:
+```ts
 export class CustomAuthProvider {
   async authenticate(config: AuthConfig): Promise<AuthResult> {
-    // Implementation
+    // Custom logic
   }
 }
 ```
 
+---
 
-## 🧪 Testing
+## 🧪 Testing & Linting
 
-### Run Tests
 ```bash
-npm run test
-# or
-yarn test
+npm run test      # Unit tests
+npm run lint      # Linting
+npx tsc --noEmit  # Type checking
 ```
 
-### Linting
-```bash
-npm run lint
-# or
-yarn lint
-```
+---
 
-### Type Checking
-```bash
-npx tsc --noEmit
-```
-
-
-## 📁 Project Structure
+## 📁 Structure
 
 ```
 webperf-pro/
 ├── src/
-│   ├── components/         # React components
-│   │   ├── AnalysisForm.tsx
-│   │   ├── PerformanceMetrics.tsx
-│   │   ├── SecurityAudit.tsx
-│   │   ├── WaterfallChart.tsx
-│   │   └── AuthTestRunner.tsx
-│   ├── services/          # Business logic
-│   │   ├── analyzer.ts
-│   │   └── authTester.ts
-│   ├── types/            # TypeScript definitions
-│   │   └── index.ts
-│   ├── App.tsx           # Main application
-│   └── main.tsx          # Entry point
-├── public/               # Static assets
-├── docs/                 # Documentation
-└── dist/                 # Production build
+│   ├── components/
+│   ├── services/
+│   ├── types/
+├── public/
+├── docs/
+└── dist/
 ```
 
+---
 
 ## 🤝 Contributing
 
-We welcome contributions! Please follow these steps:
+1. Fork + branch → `feature/xyz`
+2. Add code + tests
+3. Run tests + lint
+4. PR with clear description
 
-1. **Fork the repository**
-2. **Create a feature branch**
-   ```bash
-   git checkout -b feature/amazing-feature
-   ```
-3. **Make your changes**
-4. **Add tests** for new functionality
-5. **Run tests and linting**
-   ```bash
-   npm run test
-   npm run lint
-   ```
-6. **Commit your changes**
-   ```bash
-   git commit -m 'Add amazing feature'
-   ```
-7. **Push to your branch**
-   ```bash
-   git push origin feature/amazing-feature
-   ```
-8. **Open a Pull Request**
+### ✅ Guidelines
 
-### Development Guidelines
+- TypeScript strict mode
+- Functional React components
+- JSDoc for logic-heavy functions
+- Accessibility & responsive design
 
-- Follow TypeScript best practices
-- Use descriptive component and function names
-- Add JSDoc comments for complex functions
-- Maintain responsive design principles
-- Ensure accessibility standards (WCAG 2.1)
-
-### Code Style
-
-- Use ESLint configuration provided
-- Follow React functional component patterns
-- Implement proper error handling
-- Use TypeScript strict mode
-- Maintain consistent naming conventions
-
+---
 
 ## 🙏 Acknowledgments
 
-- [React](https://reactjs.org/) - UI framework
-- [Vite](https://vitejs.dev/) - Build tool
-- [Tailwind CSS](https://tailwindcss.com/) - CSS framework
-- [Lucide](https://lucide.dev/) - Icon library
-- [Recharts](https://recharts.org/) - Chart library
-- [jsPDF](https://github.com/MrRio/jsPDF) - PDF generation
+- React / Vite / Tailwind / jsPDF / Recharts / Lucide
 
+---
 
 ## 📞 Support
 
-- **GitHub Issues**: [Report bugs or request features](https://github.com/yourusername/webperf-pro/issues)
-- **Documentation**: Check the `/docs` folder for detailed guides
-- **Community**: Join our discussions in GitHub Discussions
+- GitHub Issues
+- `/docs` folder for help
+- GitHub Discussions
 
+---
 
 ## 🔮 Roadmap
 
-- [ ] Real-time monitoring dashboard
-- [ ] CI/CD integration plugins
-- [ ] Advanced security vulnerability scanning
-- [ ] Performance budget tracking
-- [ ] Multi-page application analysis
-- [ ] API endpoint documentation generation
-- [ ] Custom report templates
-- [ ] Integration with popular testing frameworks
+- [ ] Real-time dashboard
+- [ ] CI/CD plugins
+- [ ] Vulnerability scanner
+- [ ] Performance budgets
+- [ ] Multi-page analysis
+- [ ] API documentation generator
+- [ ] Report template builder
+- [ ] Test framework integrations
 
 ---
 
