@@ -209,12 +209,22 @@ npx tsc --noEmit  # Type checking
 ```
 webperf-pro/
 ├── src/
-│   ├── components/
-│   ├── services/
-│   ├── types/
-├── public/
-├── docs/
-└── dist/
+│   ├── components/         # React components
+│   │   ├── AnalysisForm.tsx
+│   │   ├── PerformanceMetrics.tsx
+│   │   ├── SecurityAudit.tsx
+│   │   ├── WaterfallChart.tsx
+│   │   └── AuthTestRunner.tsx
+│   ├── services/          # Business logic
+│   │   ├── analyzer.ts
+│   │   └── authTester.ts
+│   ├── types/            # TypeScript definitions
+│   │   └── index.ts
+│   ├── App.tsx           # Main application
+│   └── main.tsx          # Entry point
+├── public/               # Static assets
+├── docs/                 # Documentation
+└── dist/                 # Production build
 ```
 
 ---
